@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142338">
+  <meta name="description" content="Completa el brief del problema y del ciclo DCU por secciones, conserva el borrador y descarga el resultado en Markdown.">
+  <title>Brief del problema y del ciclo · DCU</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="floating-navigation.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#sections">Ir al brief</a>
+  <header class="masthead"><div class="container"><p class="eyebrow">DCU TEMPLATES / 01 · INVESTIGATE</p><p class="brand">Cuaderno de diseño <span>BRIEF</span></p></div></header>
+  <main class="container">
+    <section class="hero" aria-labelledby="title"><p class="eyebrow">COMPRENDER EL PROBLEMA ANTES DE ELEGIR LA SOLUCIÓN</p><h1 id="title">Un problema claro.<br>Un ciclo con propósito.</h1><p>Completa el brief del problema y del ciclo: para quién investigas, qué necesitas conocer, qué vas a abordar y qué queda pendiente. Continúa en varias sesiones y conserva el resultado en Markdown.</p><div class="badges"><span>Fase 01 · Investigar</span><span>Equipo o individual</span><span>Markdown</span></div></section>
+    <aside class="notice"><strong>El borrador se guarda solo en este navegador y dispositivo.</strong><p>No hay cuentas ni sincronización en la nube. Borrar los datos del navegador o utilizar navegación privada puede hacerte perder el trabajo. Descarga copias periódicamente e importa el archivo .md para continuar en otro dispositivo. Esta herramienta no envía documentos a Canvas ni a otros servicios.</p></aside>
+    <div class="toolbar" aria-label="Herramientas del brief"><button id="download" class="primary" disabled>Descargar brief .md</button><label class="button" for="import">Importar .md</label><input id="import" class="sr-only" type="file" accept=".md,text/markdown,text/plain"><a class="button" href="../brief-problema-y-ciclo.md" download="brief-problema-y-ciclo.md">Plantilla original</a><button id="reset" class="quiet" disabled>Nuevo brief</button></div>
+    <p id="status" role="status" aria-live="polite">Cargando la plantilla…</p>
+    <section class="progress-panel" aria-label="Progreso orientativo"><label for="progress">Progreso de escritura <span id="count"></span></label><progress id="progress" max="100" value="0"></progress><p>Cuenta respuestas escritas, no su calidad. No es una calificación ni valida el brief. Puedes descargar aunque haya campos pendientes.</p></section>
+    <details class="guide"><summary>Antes de empezar: qué sabemos y qué suponemos</summary><div><dl><dt>Indicado en el enunciado</dt><dd>El texto proporciona la información; no equivale a haber observado un servicio real.</dd><dt>Suposición pendiente de comprobar</dt><dd>Interpretación razonable sin contrastar. Explica su fundamento y cómo podrías comprobarla.</dd><dt>Desconocido</dt><dd>Falta información. Indica qué necesitas averiguar; no inventes el dato.</dd><dt>Evidencia obtenida</dt><dd>Información de una comprobación realmente realizada: indica fuente, método, fecha y límites. Identifica como simulados los datos ficticios.</dd></dl><p>No inventes entrevistas ni resultados. No incluyas datos personales de participantes, credenciales ni información confidencial.</p></div></details>
+    <details class="guide"><summary>Cómo completar el brief</summary><div><ol><li>Identifica el documento, el ciclo y quién lo mantiene. Utiliza las referencias ya acordadas por tu equipo.</li><li>Describe la dificultad, las personas afectadas y la situación actual antes de proponer funciones.</li><li>Define un resultado de aprendizaje o de producto comprobable y un alcance acotado.</li><li>Registra supuestos, riesgos, restricciones con fuente y evidencia que necesitas obtener.</li><li>Revisa el brief, documenta los cambios y descarga una versión. Aprobar el documento no confirma sus hipótesis.</li></ol><p>Si no se aplica un campo, justifícalo. Si falta información, indícalo sin inventar una respuesta. Las orientaciones aparecen como ayuda en los campos, no como respuestas precargadas.</p></div></details>
+    <nav id="navigation" aria-label="Apartados del brief"></nav>
+    <form id="sections" aria-label="Brief del problema y del ciclo"><p>Preparando los apartados…</p></form>
+    <noscript><p>Esta herramienta necesita JavaScript para editar y guardar. Puedes descargar la <a href="../brief-problema-y-ciclo.md">plantilla Markdown</a> y completarla con un editor de texto.</p></noscript>
+    <footer><p>Las respuestas se guardan localmente. Descarga el Markdown para conservarlo, compartirlo o entregarlo por el canal que corresponda. No hay envío automático.</p><p><a href="../README.md">Guía de la fase 01</a> · <a href="../../referencias/estructura-flujo-dcu.md">Estructura y flujo DCU</a> · <a href="../../">Todas las fases</a></p></footer>
+  </main>
+  <button id="back-to-sections" class="floating-sections" type="button" aria-controls="navigation" aria-label="Volver a los botones de las secciones" disabled><span aria-hidden="true">↑</span> Secciones</button>
+  <dialog id="confirmation" aria-labelledby="dialog-title"><form method="dialog"><h2 id="dialog-title">¿Sustituir el borrador?</h2><p id="dialog-message"></p><p>Descarga primero una copia si quieres conservarlo.</p><div class="toolbar"><button value="cancel" autofocus>Cancelar</button><button value="confirm" class="danger">Sustituir borrador</button></div></form></dialog>
+</body>
+</html>

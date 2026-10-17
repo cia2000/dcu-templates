@@ -1,0 +1,31 @@
+/* Keep the return control reachable without covering the end of the form. */
+body {
+  padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+}
+
+html {
+  scroll-padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+}
+
+#navigation {
+  scroll-margin-top: 16px;
+}
+
+.floating-sections {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 10;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid #075b69;
+  border-radius: 999px;
+  background: #075b69;
+  color: white;
+  box-shadow: 0 4px 16px #14233833;
+}
+
+.floating-sections:hover {
+  background: #03434d;
+}

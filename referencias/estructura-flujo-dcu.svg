@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1740" viewBox="0 0 1600 1740" role="img" aria-labelledby="title description">
+  <title id="title">Estructura y flujo iterativo del Diseño Centrado en el Usuario</title>
+  <desc id="description">Cinco fases con actividades y artefactos. Investigar: preparar el estudio y recoger evidencias mediante brief, plan, guion, registro y análisis de tareas. Definir: sintetizar necesidades, requisitos y alcance mediante personas, empatía, recorrido, necesidades, requisitos, restricciones, backlog y criterios. Diseñar y prototipar: comparar alternativas y representar la solución mediante decisiones, bocetos, arquitectura, flujos, prototipo y especificación. Evaluar: observar tareas y analizar resultados mediante plan de prueba, guion, observaciones y métricas e informe. Mejorar y repetir: priorizar cambios, revisar artefactos y volver a comprobar mediante backlog de mejoras y nuevas versiones. Flechas descendentes indican avance habitual; una línea de retorno permite volver a investigar, definir, diseñar o evaluar. Accesibilidad, privacidad, seguridad, ética y trazabilidad se mantienen durante todo el ciclo.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 12 6.5 L 1 12 Z" fill="#226574"/></marker>
+    <marker id="return-arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 12 6.5 L 1 12 Z" fill="#8d5b20"/></marker>
+  </defs>
+  <rect width="1600" height="1740" rx="20" fill="#f5f8fa"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="800" y="42" text-anchor="middle" font-size="28" font-weight="700" fill="#142b42">ESTRUCTURA Y FLUJO ITERATIVO DE DCU</text>
+    <text x="800" y="77" text-anchor="middle" font-size="21" fill="#42566b">Actividades del equipo y artefactos que conservan lo aprendido y decidido</text>
+
+    <g fill="none" stroke="#226574" stroke-width="3" marker-end="url(#arrow)">
+      <path d="M 840 340 V 375"/>
+      <path d="M 840 625 V 660"/>
+      <path d="M 840 910 V 945"/>
+      <path d="M 840 1195 V 1230"/>
+    </g>
+    <g fill="none" stroke="#8d5b20" stroke-width="3" marker-end="url(#return-arrow)">
+      <path d="M 180 1360 H 90 V 220 H 170"/>
+    </g>
+    <g fill="none" stroke="#8d5b20" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#return-arrow)">
+      <path d="M 90 505 H 170"/>
+      <path d="M 90 790 H 170"/>
+      <path d="M 90 1075 H 170"/>
+    </g>
+    <text transform="translate(45 790) rotate(-90)" text-anchor="middle" font-size="23" font-weight="700" fill="#8d5b20">VOLVER SEGÚN EL HALLAZGO O LA INCERTIDUMBRE</text>
+
+    <g fill="#ffffff" stroke="#a7c3cc" stroke-width="1.5">
+      <rect x="180" y="100" width="1320" height="240" rx="14"/>
+      <rect x="180" y="385" width="1320" height="240" rx="14"/>
+      <rect x="180" y="670" width="1320" height="240" rx="14"/>
+      <rect x="180" y="955" width="1320" height="240" rx="14"/>
+      <rect x="180" y="1240" width="1320" height="240" rx="14"/>
+    </g>
+    <g fill="#142b42">
+      <path d="M 194 100 H 1486 Q 1500 100 1500 114 V 155 H 180 V 114 Q 180 100 194 100 Z"/>
+      <path d="M 194 385 H 1486 Q 1500 385 1500 399 V 440 H 180 V 399 Q 180 385 194 385 Z"/>
+      <path d="M 194 670 H 1486 Q 1500 670 1500 684 V 725 H 180 V 684 Q 180 670 194 670 Z"/>
+      <path d="M 194 955 H 1486 Q 1500 955 1500 969 V 1010 H 180 V 969 Q 180 955 194 955 Z"/>
+      <path d="M 194 1240 H 1486 Q 1500 1240 1500 1254 V 1295 H 180 V 1254 Q 180 1240 194 1240 Z"/>
+    </g>
+    <g font-size="27" font-weight="700" fill="#ffffff">
+      <text x="205" y="137">01 · INVESTIGAR</text>
+      <text x="205" y="422">02 · DEFINIR</text>
+      <text x="205" y="707">03 · DISEÑAR Y PROTOTIPAR</text>
+      <text x="205" y="992">04 · EVALUAR</text>
+      <text x="205" y="1277">05 · MEJORAR Y REPETIR</text>
+    </g>
+    <g stroke="#d4dfe5" stroke-width="1.5"><path d="M 790 170 V 325 M 790 455 V 610 M 790 740 V 895 M 790 1025 V 1180 M 790 1310 V 1465"/></g>
+    <g font-size="18" font-weight="700" fill="#226574">
+      <text x="205" y="185">ACTIVIDADES</text><text x="820" y="185">ARTEFACTOS DE REFERENCIA</text>
+      <text x="205" y="470">ACTIVIDADES</text><text x="820" y="470">ARTEFACTOS DE REFERENCIA</text>
+      <text x="205" y="755">ACTIVIDADES</text><text x="820" y="755">ARTEFACTOS DE REFERENCIA</text>
+      <text x="205" y="1040">ACTIVIDADES</text><text x="820" y="1040">ARTEFACTOS DE REFERENCIA</text>
+      <text x="205" y="1325">ACTIVIDADES</text><text x="820" y="1325">ARTEFACTOS DE REFERENCIA</text>
+    </g>
+    <g font-size="23" fill="#142b42">
+      <text x="205" y="225">Delimitar preguntas, supuestos y participantes.</text>
+      <text x="205" y="265">Preparar métodos y participación responsable.</text>
+      <text x="205" y="305">Recoger evidencias sobre tareas y contexto.</text>
+      <text x="205" y="510">Sintetizar patrones y formular necesidades.</text>
+      <text x="205" y="550">Precisar objetivos, reglas y requisitos.</text>
+      <text x="205" y="590">Delimitar el MVP y criterios de aceptación.</text>
+      <text x="205" y="795">Generar y comparar alternativas.</text>
+      <text x="205" y="835">Representar contenido, flujos y estados.</text>
+      <text x="205" y="875">Prototipar lo necesario para comprobar.</text>
+      <text x="205" y="1080">Preparar tareas neutrales y condiciones.</text>
+      <text x="205" y="1120">Observar el uso y contrastar criterios.</text>
+      <text x="205" y="1160">Analizar barreras, resultados y límites.</text>
+      <text x="205" y="1365">Priorizar hallazgos y justificar cambios.</text>
+      <text x="205" y="1405">Revisar los artefactos afectados.</text>
+      <text x="205" y="1445">Repetir la comprobación y registrar lo aprendido.</text>
+    </g>
+    <g font-size="21" fill="#42566b">
+      <text x="820" y="216">Brief del problema y del ciclo</text>
+      <text x="820" y="242">Plan de investigación y consentimiento · Guion</text>
+      <text x="820" y="268">Registro de evidencias</text>
+      <text x="820" y="294">Análisis de tareas y contexto</text>
+      <text x="820" y="501">Personas y mapa de empatía · Recorrido de usuario</text>
+      <text x="820" y="527">Necesidades y oportunidades · Brief revisado</text>
+      <text x="820" y="553">Especificación de requisitos · Restricciones transversales</text>
+      <text x="820" y="579">Backlog del MVP · Criterios de aceptación</text>
+      <text x="820" y="786">Inventario de alternativas · Matriz y registro de decisión</text>
+      <text x="820" y="812">Bocetos y wireframes · Arquitectura de pantallas</text>
+      <text x="820" y="838">Diagrama de flujo de usuario · Prototipo navegable</text>
+      <text x="820" y="864">Especificación de pantallas</text>
+      <text x="820" y="1071">Plan de prueba de usabilidad</text>
+      <text x="820" y="1097">Guion de tareas y observación</text>
+      <text x="820" y="1123">Registro de observaciones y métricas</text>
+      <text x="820" y="1149">Informe de evaluación</text>
+      <text x="820" y="1356">Backlog de mejoras</text>
+      <text x="820" y="1382">Versiones revisadas de requisitos, criterios y decisiones</text>
+      <text x="820" y="1408">Prototipo revisado · Nueva evaluación</text>
+      <text x="820" y="1434">Backlog del MVP actualizado · Historial de cambios</text>
+    </g>
+
+    <rect x="180" y="1530" width="1320" height="150" rx="14" fill="#e1eeec" stroke="#a7c3cc" stroke-width="1.5"/>
+    <g text-anchor="middle" fill="#174f5b">
+      <text x="840" y="1566" font-size="23" font-weight="700">DURANTE TODO EL CICLO</text>
+      <text x="840" y="1601" font-size="22">Accesibilidad · Privacidad · Seguridad · Ética · Diversidad · Contexto mobile-first</text>
+      <text x="840" y="1633" font-size="21">Matriz de trazabilidad · Fuentes y límites · Identificadores · Responsable · Versiones y estados</text>
+      <text x="840" y="1664" font-size="20">Las plantillas se enlazan y actualizan; no se duplican ni se rellenan por rutina.</text>
+    </g>
+    <text x="840" y="1718" text-anchor="middle" font-size="20" fill="#42566b">Evaluar un prototipo no equivale a verificar una implementación ni a validar para toda la población.</text>
+  </g>
+</svg>
