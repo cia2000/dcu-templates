@@ -2,6 +2,12 @@
 
 Web estática en español, sin servidor de respuestas ni dependencias de ejecución. Sigue el estilo y las funciones de la herramienta de análisis inicial DCU: apartados plegables, tarjetas adaptadas a móvil, guardado local, importación y exportación Markdown y botón flotante para volver a las secciones.
 
+## Editor compartido de la fase
+
+`core.js`, `styles.css` y `floating-navigation.css` se reutilizan en las cinco herramientas. El brief conserva `app.js`, su URL y su clave de guardado. Las otras cuatro páginas utilizan `editor.js` y declaran en el HTML su plantilla, nombre de descarga y clave propia. No se duplica el editor para cada artefacto.
+
+Servir siempre `01-investigate` completo. El índice de la fase enlaza todas las aplicaciones. Las referencias y los Markdown exportados deben revisarse antes de compartirlos; el almacenamiento local no convierte el navegador en un repositorio seguro de investigación.
+
 ## Abrir
 
 Desde `01-investigate`, ejecutar `python3 -m http.server 8000` y abrir `http://localhost:8000/app/`. No abrir como `file://` ni servir únicamente `app`: el formulario descarga `../brief-problema-y-ciclo.md`, su única fuente de estructura e instrucciones.
@@ -31,6 +37,16 @@ Con Node.js, desde este directorio:
 npm test
 ```
 
-No es necesario instalar paquetes para las pruebas de estructura e intercambio Markdown. Para uso final, comprobar también guardado, descarga e importación en el navegador de destino. El indicador de progreso cuenta respuestas, no su calidad ni la validez del problema planteado.
+No es necesario instalar paquetes para las pruebas de estructura e intercambio Markdown. Para probar las cinco herramientas en navegador:
 
-Publicada en https://cia2000.github.io/dcu-templates/01-investigate/app/. No modifica Canvas. Para usarla en local, servir `01-investigate` completo, incluyendo el Markdown junto al directorio `app`; para consultar todas las referencias de distribución, servir el repositorio completo.
+```sh
+npm install
+npx playwright install chromium
+npm run test:browser
+```
+
+Si se utiliza Chrome instalado, indicar `CHROME_PATH=/ruta/a/google-chrome`. Las pruebas crean un servidor temporal y usan datos ficticios. Para probar GitHub Pages, definir `DCU_BASE_URL=https://cia2000.github.io/dcu-templates/01-investigate/`. Si Playwright se encuentra en otra instalación, `PLAYWRIGHT_MODULE` puede indicar la ruta a su módulo ESM.
+
+El indicador de progreso cuenta respuestas, no su calidad ni la validez de los contenidos. Las pruebas no acreditan consentimiento ni calidad metodológica de la investigación.
+
+La aplicación está publicada en https://cia2000.github.io/dcu-templates/01-investigate/app/, desde el repositorio https://github.com/cia2000/dcu-templates. La publicación no modifica Canvas ni se sincroniza automáticamente con los cambios de este repositorio docente. Para un despliegue propio, servir `01-investigate` completo, incluyendo el Markdown junto al directorio `app`; las referencias de distribución requieren adaptar los enlaces del repositorio docente.

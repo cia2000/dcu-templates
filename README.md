@@ -6,6 +6,7 @@ Estos recursos acompañan al [anexo de estructura y flujo](referencias/estructur
 
 - [Página de entrada](https://cia2000.github.io/dcu-templates/).
 - [Completar el brief del problema y del ciclo](https://cia2000.github.io/dcu-templates/01-investigate/app/).
+- [Las cinco herramientas de la fase 01](https://cia2000.github.io/dcu-templates/01-investigate/): brief, plan y consentimiento, guion, evidencias y análisis de tareas.
 
 Publicación estática en GitHub Pages desde la rama `main`, raíz. `.nojekyll` mantiene los archivos Markdown sin transformarlos. No se envían respuestas a servidores ni a Canvas.
 
@@ -13,7 +14,7 @@ Las referencias incluidas son copias de distribución de los recursos docentes. 
 
 | Directorio | Fase | Recursos disponibles |
 | --- | --- | --- |
-| [01-investigate](01-investigate/README.md) | Investigar | Plantilla del brief del problema y del ciclo y aplicación para completarla. |
+| [01-investigate](01-investigate/README.md) | Investigar | Cinco plantillas y aplicaciones: brief, plan y consentimiento, guion, evidencias y análisis de tareas. |
 | [02-define](02-define/README.md) | Definir | Espacio preparado para futuras plantillas. |
 | [03-design-and-prototype](03-design-and-prototype/README.md) | Diseñar y prototipar | Espacio preparado para futuras plantillas. |
 | [04-evaluate](04-evaluate/README.md) | Evaluar | Espacio preparado para futuras plantillas. |

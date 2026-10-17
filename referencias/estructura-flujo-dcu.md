@@ -1,6 +1,6 @@
 # Estructura y flujo del proceso iterativo DCU
 
-Referencia de distribución de la documentación docente. La aplicación actual corresponde al brief de la fase 01; las demás fases se mantienen como espacios para futuras herramientas.
+Referencia de distribución de la documentación docente. La fase 01 dispone de aplicaciones para brief, plan y consentimiento, guion, registro de evidencias y análisis de tareas. Las demás fases se mantienen como espacios para futuras herramientas.
 
 ![Estructura del ciclo DCU, con actividades y artefactos asociados y retorno a fases anteriores.](estructura-flujo-dcu.svg)
 

@@ -52,7 +52,7 @@ export function blank(schema) {
   return { version: VERSION, fields: Object.fromEntries(schema.fields.map(f => [f.id, ''])), tables: Object.fromEntries(schema.tables.map(t => [t.id, t.rows.map((r, ri) => r.map((v, ci) => t.editable[ri][ci] ? '' : v))])), checks: Object.fromEntries(schema.checks.map(c => [c.id, false])) };
 }
 export function validate(data, schema) {
-  if (!data || data.version !== VERSION || !data.fields || !data.tables || !data.checks) throw new Error('El archivo no tiene el formato de este brief.');
+  if (!data || data.version !== VERSION || !data.fields || !data.tables || !data.checks) throw new Error('El archivo no tiene el formato de este documento.');
   for (const f of schema.fields) if (typeof data.fields[f.id] !== 'string') throw new Error('Faltan respuestas de texto.');
   for (const c of schema.checks) if (typeof data.checks[c.id] !== 'boolean') throw new Error('Lista de comprobación incompleta.');
   for (const t of schema.tables) {
@@ -83,7 +83,7 @@ export function importMarkdown(text, schema) {
   const next = blank(schema);
   const expectedHeadings = schema.tokens.filter(t => t.type === 'text' && /^##? /.test(t.raw)).map(t => t.raw);
   const actualHeadings = lines.filter(line => /^##? /.test(line));
-  if (JSON.stringify(actualHeadings) !== JSON.stringify(expectedHeadings)) throw new Error('El Markdown no conserva los apartados de esta plantilla. Importa la plantilla cumplimentada o un brief descargado con esta herramienta.');
+  if (JSON.stringify(actualHeadings) !== JSON.stringify(expectedHeadings)) throw new Error('El Markdown no conserva los apartados de esta plantilla. Importa la plantilla cumplimentada o un documento descargado con esta herramienta.');
   // Skip the explanatory tables before section 0.
   const start = lines.findIndex(line => /^## 0\./.test(line));
   const end = lines.findIndex(line => /^## Continuidad/.test(line));
@@ -100,7 +100,7 @@ export function importMarkdown(text, schema) {
       return editable ? (v === t.rows[ri]?.[ci] && placeholder(v) || /^\[Completar\]$/.test(v) ? '' : decode(v)) : v;
     }));
   }
-  if (tableIndex !== schema.tables.length) throw new Error('Faltan tablas del brief.');
+  if (tableIndex !== schema.tables.length) throw new Error('Faltan tablas del documento.');
   for (const f of schema.fields) {
     const from = body.indexOf(`## ${f.section}`);
     const nextHeading = body.findIndex((line, index) => index > from && /^## /.test(line));
